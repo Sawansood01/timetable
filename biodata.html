@@ -1,0 +1,92 @@
+<html>
+<h1 id="title">Bio Data Form</h1>
+<div id="form-outer">
+  <p id="description">
+    To know the details of students
+  </p>
+  <form id="survey-form" method="GET" action="">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" placeholder="Enter your name" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="fname-label" for="fname">Father's Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="fname" id="fname" placeholder="Enter your father's name" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="dob-label" for="dob">D.O.B: </label>
+      </div>
+      <div class="rightTab">
+        <input type="date" name="dob" id="iddob"  required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="department">Department: </label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="department">
+        <option disabled value>Select an option</option>
+        <option value="it">IT</option>
+        <option value="cse">CSE</option>
+        <option value="ece">ECE</option>
+        <option value="mech">MECH</option>
+        <option value="civil">CIVIL</option>
+        <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="gender">Gender: </label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li><label><input name="radio-buttons" value="male"  type="radio" class="userRatings" >Male</label></li>
+          <li><label><input name="radio-buttons" value="female"  type="radio" class="userRatings" >Female</label></li>
+          <li><label><input name="radio-buttons" value="others"  type="radio" class="userRatings" >Others</label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="address">Address: </label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" style="height:50px;resize:vertical;" name="address" placeholder="Enter your address here..."></textarea>
+      </div>
+    </div>
+    
+       <div class="rowTab">
+      <div class="labels">
+        <label for="language">Language Known: </label>
+      </div>
+      <div class="rightTab">
+        <ul id="language" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="Java" type="checkbox">Java</label></li>
+          <li class="checkbox"><label><input name="prefer" value="Python" type="checkbox" >Python</label></li>
+          <li class="checkbox"><label><input name="prefer" value="C" type="checkbox">C</label></li>
+          <li class="checkbox"><label><input name="prefer" value="C++" type="checkbox" >C++</label></li>
+
+        </ul>
+      </div>
+    </div>
+    
+    <button id="submit" type="submit">Submit</button>
+    <button id="reset" type="reset">Reset</button>
+  </form>
+</div>
+</html>
